@@ -1,1 +1,1 @@
-node_modules/.bin/html-validate start -c *.html
+node_modules/.bin/html-validate *.html
