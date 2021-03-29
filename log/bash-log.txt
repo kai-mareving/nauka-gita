@@ -1,0 +1,92 @@
+Indra@ZERG MINGW64 /c/Kodilla/nauka-gita (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        package.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Indra@ZERG MINGW64 /c/Kodilla/nauka-gita (master)
+$ add .
+bash: add: command not found
+
+Indra@ZERG MINGW64 /c/Kodilla/nauka-gita (master)
+$ git add .
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+
+Indra@ZERG MINGW64 /c/Kodilla/nauka-gita (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   package.json
+
+
+Indra@ZERG MINGW64 /c/Kodilla/nauka-gita (master)
+$ git commit -m "Init npm in repository"
+[master 8836a45] Init npm in repository
+ 1 file changed, 20 insertions(+)
+ create mode 100644 package.json
+
+Indra@ZERG MINGW64 /c/Kodilla/nauka-gita (master)
+$ git pull
+Enter passphrase for key '/c/Users/Indra/.ssh/id_ed25519':
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.55 KiB | 12.00 KiB/s, done.
+From github.com:kai-mareving/nauka-gita
+   9776c79..4f65a28  master     -> origin/master
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/Kodilla/nauka-gita/.git/MERGE_MSG to DOS format...
+dos2unix: converting file C:/Kodilla/nauka-gita/.git/MERGE_MSG to Unix format...
+Merge made by the 'recursive' strategy.
+ .gitignore | 116 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 116 insertions(+)
+
+Indra@ZERG MINGW64 /c/Kodilla/nauka-gita (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Indra@ZERG MINGW64 /c/Kodilla/nauka-gita (master)
+$ git push
+Enter passphrase for key '/c/Users/Indra/.ssh/id_ed25519':
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 827 bytes | 275.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:kai-mareving/nauka-gita.git
+   4f65a28..47140a0  master -> master
+
+Indra@ZERG MINGW64 /c/Kodilla/nauka-gita (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Indra@ZERG MINGW64 /c/Kodilla/nauka-gita (master)
+$ git tree
+*   47140a0 (HEAD -> master, origin/master, origin/HEAD) Merge branch 'master' of github.com:kai-mareving/nauka-gita
+|\
+| * 4f65a28 Update .gitignore
+* | 8836a45 Init npm in repository
+|/
+* 9776c79 Add .gitignore
+* 943d83f Add 1 log file
+* 0693f73 Add first html content. Name classes for css. Add basic styles
+* 9c8fcdd Add log folder
+* a7ffab7 Init project
