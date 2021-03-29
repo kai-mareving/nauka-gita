@@ -1,4 +1,5 @@
 # Logs
+terminal*.png
 log/
 logs
 *.log
